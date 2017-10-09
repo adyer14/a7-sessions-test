@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "node": "6.11.2"
-  }
+  },
   "devDependencies": {
     "autoprefixer-stylus": "0.10.0",
     "babel-eslint": "^7.1.1",
