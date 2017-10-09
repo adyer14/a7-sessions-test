@@ -5,7 +5,7 @@ import './App.css';
 import HeardFeed from './HeardFeed';
 import PostEditor from './PostEditor';
 import base from './base';
-//import 'firebase/auth';
+import 'firebase/auth';
 
 class App extends Component {
 
@@ -41,10 +41,12 @@ class App extends Component {
   }
 
   componentWillUnMount() {
-    base.removedBinding(this.ref);
-
+    
     //firebase log out
     base.initializedApp.signOut();
+    base.removeBinding(this.ref);
+
+
   }
 
 
