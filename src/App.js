@@ -41,10 +41,10 @@ class App extends Component {
   }
 
   componentWillUnMount() {
-    
+
     //firebase log out
     base.initializedApp.signOut();
-    base.removeBinding(this.ref);
+    base.removedBinding(this.ref);
 
 
   }
